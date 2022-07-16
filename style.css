@@ -1,0 +1,113 @@
+/*
+Theme Name: Advantage Media Partners Divi-child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Description: Advantage Media Partners Child theme for the Divi theme
+Author: Advantage Media Partners
+Author URI: http://www.advantagemediapartners.com
+Template: Divi
+Version: 3.6 5/16/2022
+*/
+
+/**********[ Ben's helper classes ]**********/
+
+
+.flex-display {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 980px) {
+	.flex-display {
+		display: block;
+	}
+    /* apply these to rows */
+    .two-columns .et_pb_column {
+        width: 50%!important;
+    }
+    .three-columns .et_pb_column {
+        width: 33.33%!important;
+    }    
+    .four-columns .et_pb_column {
+        width: 25%!important;
+    }
+
+}
+
+
+.sticky {
+	position: sticky;
+	top: 100px;
+}
+
+/**********[ CSS @imports ]**********/
+
+
+
+/**********[ Globals ]**********/
+
+
+/**********[ Home Page ]**********/
+
+
+/**********[ Header & Top Nav ]**********/
+
+/* Place the word MENU after the mobile hamburger */
+.mobile_menu_bar:after {
+    content: 'MENU';
+    position: relative !important;
+    bottom: 10px;
+    left: 10%;
+    color: #2ea3f2;
+}
+
+/* Change the hamburger to X when opened */
+.mobile_nav.opened .mobile_menu_bar:before {
+    content: '\4d';
+}
+
+
+/**********[ Featurettes Top]**********/
+
+
+/**********[ Slider ]**********/
+
+
+/**********[ Body ]**********/
+
+
+/**********[ Services ]**********/
+
+
+/**********[ Forms ]**********/
+
+
+/**********[ Footer ]**********/
+
+
+/**********[ Media Queries ]**********/
+@media (max-width: 980px) {
+.et_non_fixed_nav.et_transparent_nav #main-header, .et_non_fixed_nav.et_transparent_nav #top-header, .et_fixed_nav #main-header, .et_fixed_nav #top-header {
+    position: fixed;
+}
+.et_mobile_menu {
+    overflow: scroll !important;
+    max-height: 83vh;
+}
+}
+
+.et-social-tik-tok a.icon:before {
+    content: url('images/tik-tok-icon.png');
+}
+
+.et-social-snapchat a.icon:before {
+    content: url('images/snapchat-icon.png');
+}
+
+.et-social-yelp a.icon:before {
+    content: url('images/yelp-icon.png');
+}
+
+.et-social-linktree a.icon:before {
+	font-family: FontAwesome !important;
+    content: '\f0c1';
+}
