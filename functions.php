@@ -88,7 +88,7 @@ add_filter('use_block_editor_for_post_type', '__return_false', 10);
 
 // customize login page
 
-function my_login_logo() { ?>
+function login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
@@ -129,13 +129,13 @@ function my_login_logo() { ?>
     </style>
 <?php }
 
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'login_logo' );
 
-function new_logo_login_url($url) {
-    return 'https://advantagemediapartners.com/';
+function logo_login_url($url) {
+    return 'https://bgriz.dev/';
 }
 
-add_filter( 'login_headerurl', 'new_logo_login_url' );
+add_filter( 'login_headerurl', 'logo_login_url' );
 
 // Display current year 
 function year_shortcode() {
