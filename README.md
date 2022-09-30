@@ -1,4 +1,4 @@
-## DIVI CHILD THEME FOR ADVANTAGE MEDIA PARTNERS 
+## Customized Divi Child theme
 
 Updated: 5/26/22
 
@@ -29,3 +29,4 @@ FEATURES
 6. sticky class 
     - add this class to columns to make them "stick" and scroll with long sections of content 
     - change the top offset in style.css on the child theme of the website using the class
+    
